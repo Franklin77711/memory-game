@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import style from "./style/App.css"
+import Cards from "./Components/Cards";
+import Score from "./Components/Score";
 
-function App() {
+const App = () => {
+  const [bestScore, setBestScore] = useState(0);
+  const [scoreRN, setScoreRN] = useState(0);
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Dota 2 Memory Game</h1>
+      <p>Get a point by clicking on a character which you didn't click already.</p>
+      <Score bestScore={bestScore} scoreRN={scoreRN}/>
+      <Cards />
     </div>
   );
 }
