@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import style from "./style/App.css"
+import "./style/App.css"
 import Cards from "./Components/Cards";
 
 const App = () => {
@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className="App">
       <h1>Dota 2 Memory Game</h1>
-      <p>Get a point by clicking on a character which you didn't click already.</p>
+      <p>Get a point by clicking on a character which you didn't click already. (Max: 12)</p>
       <Cards/>
     </div>
   );
