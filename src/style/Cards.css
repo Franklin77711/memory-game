@@ -13,8 +13,9 @@ body{
 
 .card:hover{
     background-color: #a4a6a8;
-    padding: 0.5em;
-    width: 110%;
+    transform: scale(1.2);
+    transition-duration: .4s;
+    height: 11em;
 }
 
 #content{

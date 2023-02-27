@@ -8,6 +8,7 @@ const Cards = () =>{
     const [scoreRN, setScoreRN] = useState(0);
     const [clickedCard, setClickedCard] = useState([]);
 
+
     const ClickedToState = (card) =>{
         if (clickedCard.includes(card.id)){
             if(scoreRN > bestScore){
